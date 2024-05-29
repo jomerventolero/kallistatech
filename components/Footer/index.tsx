@@ -53,10 +53,10 @@ const Footer = () => {
                   contact
                 </p>
                 <a
-                  href="mailto:info@mybespokestaff.com"
+                  href="mailto:info@myKallistastaff.com"
                   className="text-itemtitle font-medium text-black dark:text-white"
                 >
-                  info@mybespokestaff.com
+                  info@myKallistastaff.com
                 </a>
               </motion.div>
 
@@ -301,7 +301,7 @@ const Footer = () => {
               className="animate_top"
             >
               <p>
-                &copy; {new Date().getFullYear()} Bespoke IT. All rights reserved
+                &copy; {new Date().getFullYear()} Kallista IT. All rights reserved
               </p>
             </motion.div>
 

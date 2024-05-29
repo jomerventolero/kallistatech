@@ -10,9 +10,9 @@ import Pricing from "@/components/Pricing";
 import Testimonial from "@/components/Testimonial";
 
 export const metadata: Metadata = {
-  title: "Bespoke IT",
-  description: "Bespoke IT Services",
-  keywords: "bespoke corp services, bespoke it services, web development company, it management company, e-commerce development company, creatives company",
+  title: "Kallista IT",
+  description: "Kallista IT Services",
+  keywords: "Kallista corp services, Kallista it services, web development company, it management company, e-commerce development company, creatives company",
 };
 
 export default function Home() {

@@ -13,8 +13,8 @@ const Feature = () => {
           {/* <!-- Section Title Start --> */}
           <SectionHeader
             headerInfo={{
-              title: "Bespoke IT Services",
-              subtitle: "Core Services of Bespoke IT",
+              title: "Kallista IT Services",
+              subtitle: "Core Services of Kallista IT",
               description: `Delivering High Quality IT Services to Our Clients. Your Trusted Partner in Technology Solutions.`,
             }}
           />

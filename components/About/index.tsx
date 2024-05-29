@@ -67,7 +67,7 @@ const About = () => {
                 </span>
               </h2>
               <p>
-              Bespoke IT is dedicated to providing comprehensive and customized IT solutions designed to meet the unique needs of startups and small to medium-sized enterprises (SMEs). Our team of experts leverages the latest technologies to deliver scalable, high-performance applications and services that drive business growth and efficiency.
+              Kallista IT is dedicated to providing comprehensive and customized IT solutions designed to meet the unique needs of startups and small to medium-sized enterprises (SMEs). Our team of experts leverages the latest technologies to deliver scalable, high-performance applications and services that drive business growth and efficiency.
               </p>
 
               <div className="mt-7.5 flex items-center gap-5">
@@ -134,7 +134,7 @@ const About = () => {
                 </span>
               </h2>
               <p>
-                Bespoke IT is dedicated to providing comprehensive and customized IT solutions designed to meet the unique needs of startups and small to medium-sized enterprises (SMEs). Our team of experts leverages the latest technologies to deliver scalable, high-performance applications and services that drive business growth and efficiency.
+                Kallista IT is dedicated to providing comprehensive and customized IT solutions designed to meet the unique needs of startups and small to medium-sized enterprises (SMEs). Our team of experts leverages the latest technologies to deliver scalable, high-performance applications and services that drive business growth and efficiency.
               </p>
               <div>
                 <a

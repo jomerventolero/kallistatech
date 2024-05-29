@@ -4,7 +4,7 @@ const featuresTabData: FeatureTab[] = [
   {
     id: "tabOne",
     title: "Our Design Has Neat & Clean User Interface.",
-    desc1: `At Bespoke IT, we believe that exceptional web development starts with an unwavering commitment to user experience.  Our core philosophy centers on crafting clean and neat user interfaces (UIs) that not only look stunning, but also empower your audience with intuitive navigation and effortless interaction.`,
+    desc1: `At Kallista IT, we believe that exceptional web development starts with an unwavering commitment to user experience.  Our core philosophy centers on crafting clean and neat user interfaces (UIs) that not only look stunning, but also empower your audience with intuitive navigation and effortless interaction.`,
     desc2: ``,
     image: "/images/features/cleanui.svg",
     imageDark: "/images/features/cleanui.svg",

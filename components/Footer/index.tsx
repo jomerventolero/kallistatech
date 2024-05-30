@@ -46,7 +46,7 @@ const Footer = () => {
                 </a>
 
                 <p className="mb-10 mt-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Your Reliable IT Partner, Offering Cutting-Edge Solutions and Continuous Support for Sustainable Growth
                 </p>
 
                 <p className="mb-1.5 text-sectiontitle uppercase tracking-[5px]">
@@ -56,7 +56,7 @@ const Footer = () => {
                   href="mailto:info@myKallistastaff.com"
                   className="text-itemtitle font-medium text-black dark:text-white"
                 >
-                  info@myKallistastaff.com
+                  hiroventolero@gmail.com
                 </a>
               </motion.div>
 

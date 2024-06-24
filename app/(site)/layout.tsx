@@ -11,6 +11,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 import ToasterContext from "../context/ToastContext";
 
+import { Head } from "next/document";
+
 export default function RootLayout({
   children,
 }: {
@@ -18,6 +20,24 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <Head>
+          {/* Google Tag Manager */}
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-4TEVFTFZ4D"
+          ></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-4TEVFTFZ4D');
+              `,
+            }}
+          />
+          {/* End Google Tag Manager */}
+      </Head>
       <body className={`dark:bg-black ${inter.className}`}>
         <ThemeProvider
           enableSystem={false}

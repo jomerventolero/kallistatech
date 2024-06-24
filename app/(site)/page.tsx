@@ -10,7 +10,7 @@ import Pricing from "@/components/Pricing";
 import Testimonial from "@/components/Testimonial";
 
 export const metadata: Metadata = {
-  title: "Kallista IT",
+  title: "Kallista Tech Solutions",
   description: "Kallista IT Services",
   keywords: "Kallista corp services, Kallista it services, web development company, it management company, e-commerce development company, creatives company",
 };

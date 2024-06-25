@@ -189,7 +189,7 @@ const Contact = () => {
                   Email Address
                 </h3>
                 <p>
-                  <a href="#">hiroventolero@gmail.com</a>
+                  <a href="mailto:me@jomerventolero.site">me@jomerventolero.site</a>
                 </p>
               </div>
               <div>

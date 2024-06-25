@@ -56,7 +56,7 @@ const Footer = () => {
                   href="mailto:info@myKallistastaff.com"
                   className="text-itemtitle font-medium text-black dark:text-white"
                 >
-                  hiroventolero@gmail.com
+                  me@jomerventolero.site
                 </a>
               </motion.div>
 

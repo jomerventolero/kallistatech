@@ -2,18 +2,43 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
+import emailjs from "@emailjs/browser";
+import { useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Contact = () => {
-  /**
-   * Source: https://www.joshwcomeau.com/react/the-perils-of-rehydration/
-   * Reason: To fix rehydration error
-   */
-  const [hasMounted, setHasMounted] = React.useState(false);
-  React.useEffect(() => {
-    setHasMounted(true);
-  }, []);
-  if (!hasMounted) {
-    return null;
+
+  const [email, setEmail] = useState('');
+  const [fullname, setFullname] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+  const [phone, setPhone] = useState('');
+
+  const notify = (msg) => toast(msg);
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    try { 
+      const status = emailjs.send(
+        process.env.NEXT_PUBLIC_SERVICE_ID as string,
+        process.env.NEXT_PUBLIC_TEMPLATE_ID as string,
+        {
+          from_name: fullname,
+          from_email: email,
+          to_name: "Kallista Tech Solutions",
+          to_email: "info@kallistatech.com",
+          message: message,
+          phone: phone,
+          subject: subject
+        },
+        process.env.NEXT_PUBLIC_PUBLIC_KEY as string
+      );
+      notify('📩 Thank you for contacting us. We will get back to you soon.');
+      console.log(status);
+    } catch (error) {
+      alert('Something went wrong. Please try again.');
+      console.log(error);
+    }
   }
 
   return (
@@ -61,20 +86,23 @@ const Contact = () => {
               </h2>
 
               <form
-                action="https://formbold.com/s/3L7BQ"
-                method="POST"
+                onSubmit={handleSubmit}
               >
                 <div className="mb-7.5 flex flex-col gap-7.5 lg:flex-row lg:justify-between lg:gap-14">
                   <input
                     type="text"
                     placeholder="Full name"
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
+                    onChange={e => setFullname(e.target.value)}
+                    required
                   />
 
                   <input
                     type="email"
                     placeholder="Email address"
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
+                    onChange={e => setEmail(e.target.value)}
+                    required
                   />
                 </div>
 
@@ -83,12 +111,16 @@ const Contact = () => {
                     type="text"
                     placeholder="Subject"
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
+                    onChange={e => setSubject(e.target.value)}
+                    required
                   />
 
                   <input
                     type="text"
                     placeholder="Phone number"
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
+                    onChange={e => setPhone(e.target.value)}
+                    required
                   />
                 </div>
 
@@ -97,6 +129,8 @@ const Contact = () => {
                     placeholder="Message"
                     rows={4}
                     className="w-full border-b border-stroke bg-transparent focus:border-waterloo focus:placeholder:text-black focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white"
+                    onChange={e => setMessage(e.target.value)}
+                    required
                   ></textarea>
                 </div>
 

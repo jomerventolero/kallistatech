@@ -24,7 +24,6 @@ export default function Home() {
       <FeaturesTab />
       <Integration />
       <FAQ />
-      <Testimonial />
       <Pricing />
     </main>
   );

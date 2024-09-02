@@ -88,7 +88,7 @@ const Pricing = () => {
                 popular
               </div>
 
-              <h3 className="mb-7.5 text-3xl font-bold text-yellow-500 dark:text-white xl:text-sectiontitle3">
+              <h3 className="mb-7.5 text-3xl font-bold text-yellow-500 dark:text-yellow-400 xl:text-sectiontitle3">
                 Gold Tier{" "}
               </h3>
               <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">

@@ -33,11 +33,8 @@ const Pricing = () => {
           <div className="flex flex-wrap justify-center gap-7.5 lg:flex-nowrap xl:gap-12.5">
             {/* <!-- Pricing Item --> */}
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
-              <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                $999{" "}
-                <span className="text-regular text-waterloo dark:text-manatee">
-                  /plan
-                </span>
+              <h3 className="mb-7.5 text-3xl font-bold text-slate-400 dark:text-slate-200 xl:text-sectiontitle3">
+                Silver Tier{" "}
               </h3>
               <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
                 Basic Plan
@@ -91,11 +88,8 @@ const Pricing = () => {
                 popular
               </div>
 
-              <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                $2999{" "}
-                <span className="text-regular text-waterloo dark:text-manatee">
-                  /plan
-                </span>
+              <h3 className="mb-7.5 text-3xl font-bold text-yellow-500 dark:text-white xl:text-sectiontitle3">
+                Gold Tier{" "}
               </h3>
               <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
                 Standard Business Website
@@ -147,12 +141,11 @@ const Pricing = () => {
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
               <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
                 Contact Us{" "}
-                
               </h3>
               <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
-                E-commerce Website
+                Custom Enterprise Web Application
               </h4>
-              <p>Designed for online stores or businesses selling products/services online.</p>
+              <p>Designed for custom web applications.</p>
 
               <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
                 <ul>

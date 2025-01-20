@@ -3,8 +3,8 @@ import Contact from "@/components/Contact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Support Page - Solid SaaS Boilerplate",
-  description: "This is Support page for Solid Pro",
+  title: "Contact us - Kallista Tech Solutions",
+  description: "Send us a message. Kallista Tech Solutions",
   // other metadata
 };
 

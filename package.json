@@ -1,7 +1,9 @@
 {
-  "name": "solid-nextjs",
+  "name": "kallistatech",
   "version": "0.2.0",
   "private": true,
+  "author": "Jomer Augustin Ventolero",
+  "email": "me@jomerventolero.site",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

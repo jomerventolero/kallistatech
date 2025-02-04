@@ -3,9 +3,19 @@ import SharePost from "@/components/Blog/SharePost";
 import { Metadata } from "next";
 import Image from "next/image";
 
+
+const data = [
+  {
+    metadata: {
+      title: "This is a sample title for blog details page",
+      description: "This is Blog details page.",
+    }
+  }
+]
+
 export const metadata: Metadata = {
-  title: "Blog Details Page - Solid SaaS Boilerplate",
-  description: "This is Blog details page for Solid Pro",
+  title: data[0].metadata.title,
+  description: data[0].metadata.description,
   // other metadata
 };
 

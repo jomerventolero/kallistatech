@@ -28,18 +28,18 @@ const Footer = () => {
                 viewport={{ once: true }}
                 className="animate_top w-1/2 lg:w-1/4"
               >
-                <a href="index.html" className="relative">
+                <a href="/" className="relative">
                   <Image
                     width={110}
                     height={80}
-                    src="/images/logo/logo-t.png"
+                    src="/images/logo/kallistatech-logo.svg"
                     alt="Logo"
                     className="dark:hidden"
                   />
                   <Image
                     width={110}
                     height={80}
-                    src="/images/logo/logo-t-white.png"
+                    src="/images/logo/kallistatech-logo.svg"
                     alt="Logo"
                     className="hidden dark:block"
                   />

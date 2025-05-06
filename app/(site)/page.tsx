@@ -7,7 +7,7 @@ import CTA from "@/components/CTA";
 import FAQ from "@/components/FAQ";
 import Pricing from "@/components/Pricing";
 import Testimonial from "@/components/Testimonial";
-import HeroSection from "@/components/hero-section";
+import Hero from "@/components/Hero";
 
 export const metadata: Metadata = {
   title: "Kallista Tech Solutions",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main>
-      <HeroSection />
+      <Hero />
       <Feature />
       <About />
       <FeaturesTab />
